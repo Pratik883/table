@@ -1,0 +1,48 @@
+
+th
+{
+  background: white;
+  height:50px;
+
+}
+table,th,td
+{
+  border:2px solid black;
+}
+
+table {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+    color:black;
+    border-collapse: separate;
+}
+
+  body
+{
+    counter-reset: Serial;      
+    text-shadow: .2px .3px;
+    text-align: center;
+}
+
+tbody tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;  
+  }
+  
+  
